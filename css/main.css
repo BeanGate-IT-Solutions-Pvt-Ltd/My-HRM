@@ -95,21 +95,70 @@ a{
  */
 
 
+ /* // best seen at 1500px or less */
 
+ html, body { height: 100%; }
+ body {
+   background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
+   overflow: hidden;
+ }
+ 
+ .ocean { 
+   height: 5%;
+   width:100%;
+   position:absolute;
+   bottom:0;
+   left:0;
+   background: #015871;
+ }
+ 
+ .wave {
+   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+   position: absolute;
+   top: -198px;
+   width: 6400px;
+   height: 198px;
+   animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+   transform: translate3d(0, 0, 0);
+ }
+ 
+ .wave:nth-of-type(2) {
+   top: -175px;
+   animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+   opacity: 1;
+ }
+ 
+ @keyframes wave {
+   0% {
+     margin-left: 0;
+   }
+   100% {
+     margin-left: -1600px;
+   }
+ }
+ 
+ @keyframes swell {
+   0%, 100% {
+     transform: translate3d(0,-25px,0);
+   }
+   50% {
+     transform: translate3d(0,5px,0);
+   }
+ }
 
 
  /* new css */
 
  .contaner-fluid{
-        background-image: linear-gradient(to left,#4E65FF,#FFC371,#4E65FF);
+        /* background-image: url(../i); */
         height: 100vh;
  }
 .wrapper {
-    --input-focus: #2d8cf0;
+    --input-focus: #1498c3;
     --font-color: #323232;
-    --font-color-sub: #666;
+    --font-color-sub: #212121;
     --bg-color: #fff;
-    --bg-color-alt: #666;
+    --bg-color-alt: #fff;
     --main-color: #323232;
       /* display: flex; */
       /* flex-direction: column;
@@ -118,7 +167,8 @@ a{
       position: absolute;
       top:50%;
       left: 50%;
-      background-color: red;
+      transform: translate(-50%, -50%);
+      /* background-color: red; */
   }
   /* switch card */
   .switch {
@@ -135,7 +185,7 @@ a{
   
   .card-side::before {
     position: absolute;
-    content: 'Log in';
+    content: 'Admin';
     left:-70px;
     /* right: -70px; */
     top: 0;
@@ -147,7 +197,7 @@ a{
   
   .card-side::after {
     position: absolute;
-    content: 'Sign up';
+    content: 'Employee';
     left: 70px;
     top: 0;
     width: 100px;
@@ -166,7 +216,8 @@ a{
     box-sizing: border-box;
     border-radius: 5px;
     border: 2px solid var(--main-color);
-    box-shadow: 4px 4px var(--main-color);
+    /* box-shadow: 4px 4px var(--main-color); */
+    
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -186,9 +237,9 @@ a{
     border: 2px solid var(--main-color);
     border-radius: 5px;
     left: -2px;
-    bottom: 2px;
+    bottom: 0px;
     background-color: var(--bg-color);
-    box-shadow: 0 3px 0 var(--main-color);
+    /* box-shadow: 0 3px 0 var(--main-color); */
     transition: 0.3s;
   }
   
@@ -239,11 +290,12 @@ a{
     justify-content: center;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background: lightgrey;
+    background:#fff;
     gap: 20px;
-    border-radius: 5px;
-    border: 2px solid var(--main-color);
-    box-shadow: 4px 4px var(--main-color);
+    border-radius: 15px;
+    /* border: 2px solid var(--main-color); */
+    /* box-shadow: 4px 4px var(--main-color); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
   
   .flip-card__back {
@@ -269,14 +321,12 @@ a{
   .flip-card__input {
     width: 250px;
     height: 40px;
-    border-radius: 5px;
-    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    border: none;
+    /* border: 2px solid var(--main-color); */
     background-color: var(--bg-color);
-    box-shadow: 4px 4px var(--main-color);
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--font-color);
-    padding: 5px 10px;
+    /* box-shadow: 4px 4px var(--main-color); */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    padding: 5px 10px;
     outline: none;
   }
   
@@ -290,20 +340,33 @@ a{
   }
   
   .flip-card__btn:active, .button-confirm:active {
-    box-shadow: 0px 0px var(--main-color);
+    /* box-shadow: 0px 0px var(--main-color); */
     transform: translate(3px, 3px);
   }
   
   .flip-card__btn {
     margin: 20px 0 20px 0;
-    width: 120px;
+    width: 250px;
     height: 40px;
-    border-radius: 5px;
-    border: 2px solid var(--main-color);
-    background-color: var(--bg-color);
-    box-shadow: 4px 4px var(--main-color);
+    border-radius: 10px;
+    border: none;
+    /* border: 2px solid var(--main-color); */
+    /* background-color: var(--bg-color); */
+    background-color: #f06d03;
+
+    /* box-shadow: 4px 4px var(--main-color); */
     font-size: 17px;
     font-weight: 600;
-    color: var(--font-color);
+    /* color: white; */
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    padding: 5px 10px;
   } 
+
+  .flip-card__btn:hover{
+    /* border: 2px solid var(--main-color); */
+/* content: "Confrim"; */
+    background-color:#ff7300;
+    /* transform: translate(-5px, -5px); */
+  
+
+  }
