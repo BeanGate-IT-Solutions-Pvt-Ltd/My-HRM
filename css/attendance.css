@@ -4,6 +4,12 @@ body{
 	background-color: #fff5e6;
 }
 
+.attendance{
+  position: relative;
+  bottom: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 h3{
 	font-family: 'Oswald', sans-serif;
 }
