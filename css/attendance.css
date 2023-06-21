@@ -52,6 +52,15 @@ h3{
 	text-decoration: none;
 }
 
+.dates{
+  position: relative;
+  margin: 10px;
+  border: 1px solid lightslategray;
+  width: 91%;
+  left: 47px;
+  bottom: 19px;
+}
+
 .date-range {
 	width: 30px;
 	/* padding: 2px; */
@@ -71,14 +80,22 @@ h3{
 
 .late-payment{
 	position: relative;
-	right: 80px;
+	right: 165px;
+  bottom: 20px;
 	border: 1px solid lightslategray;
 	cursor: pointer;
+  font-size: small;
+  color: lightslategrey;
 }
 
 .submit{
+  position: relative;
+  font-size: small;
 	border: 1px solid lightslategray;
 	cursor: pointer;
+  bottom: 20px;
+  right: 50px;
+  color: lightslategrey;
 }
 
 .serach{
