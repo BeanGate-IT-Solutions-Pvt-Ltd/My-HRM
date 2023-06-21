@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body{
+	background-color: #fff5e6;
+}
+
+h3{
+	font-family: 'Oswald', sans-serif;
+}
+
+.nav{
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.nav ul li{
+	display: inline;
+}
+
+.nav ul a{
+	text-decoration: none;
+	color: #000;
+	margin: 8px;
+}
+
+.area{
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.select-area input{
+	background-color: #fff;
+	border: none;
+	border-radius: 15px;
+	color: #a1a1a1c8;
+}
+
+.select-area input::placeholder{
+	border-radius: 15px;
+}
+
+.filter-area{
+  background-color: #fff;
+}
+
+.filter p{
+	color: #a1a1a1c8;
+}
+
+.c-report a{
+	color: #000;
+	text-decoration: none;
+}
+
+.date-range {
+	width: 30px;
+	/* padding: 2px; */
+	/* margin: 3px; */
+	background-color: gainsboro;
+	border: 1px solid black;
+}
+
+.success{
+	background-color: green;
+}
+
+.red-zone{
+	background-color: rgb(247, 178, 239);
+	color: red;
+}
+
+.late-payment{
+	position: relative;
+	right: 80px;
+	border: 1px solid lightslategray;
+	cursor: pointer;
+}
+
+.submit{
+	border: 1px solid lightslategray;
+	cursor: pointer;
+}
+
+.serach{
+	border: 1px solid black;
+	background-color: gainsboro;
+	color: gainsboro;
+}
+
+#empl-search{
+	width: 40%;
+	border: none;
+}
+
+.r-approve{
+	color: #000;
+	background-color: azure;
+	border: 1px solid orangered;
+	height: 90%;
+}
+
+.payroll{
+	background-color: orangered;
+	border: 1px solid #fff;
+	color: #fff;
+	height: 90%;
+}
