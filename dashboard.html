@@ -26,11 +26,12 @@
             <div class="col-5 d-flex justify-content-around align-items-center ">
                 <div class="d-flex justify-content-center align-items-center mt-3">
                     <div class="input-group mb-3 d-flex justify-content-center align-items-center">
+                        <input type="text" class="form-control rounded-pill " placeholder="Search....."
+                            aria-label="Username" aria-describedby="basic-addon1">
                         <span class="input-group-text rounded-circle border-2 mx-2" style="background-color: #f06d03;"
                             id="basic-addon1">
                             <i class="bi bi-search text-light "></i></span>
-                        <input type="text" class="form-control rounded-pill " placeholder="Search....."
-                            aria-label="Username" aria-describedby="basic-addon1">
+                        
                     </div>
                 </div>
                 <div class="ml-5">
@@ -52,8 +53,8 @@
                 <button type="button" class="btn btn-sm btn-dark dropdown-toggle-split" data-bs-toggle="dropdown"
                     aria-expanded="true"><i class="bi bi-three-dots"></i>
                 </button>
-                <ul class="dropdown-menu p-2 mt-3">
-                    <li>Log Out</li>
+                <ul class="dropdown-menu p-2 mt-3" style="background-color: #f06d03">
+                    <li ><a href="index.html" class="text-decoration-none text-light">Log Out</a></li>
 
                 </ul>
             </div>
@@ -102,10 +103,18 @@
 
                         <li>
 
-                            <a href="employees.html">
+                            <a href="employees.html " class="dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-people-fill mx-2" style="font-size: 2rem;"></i>
                                 <span class="nav-text">Employee</span>
+                               
                             </a>
+                            <ul class="dropdown-menu ">
+                                <li><button class="dropdown-item" type="button"><a href="employees.html">Details</a></button></li>
+
+                                <li><button class="dropdown-item" type="button"><a href="attendance.html">Attendance</a></button></li>
+                                <li><button class="dropdown-item" type="button">Pay Slip</button></li>
+                                <li><button class="dropdown-item" type="button">Add Employee</button></li>
+                              </ul>
                         </li>
                         <li>
 

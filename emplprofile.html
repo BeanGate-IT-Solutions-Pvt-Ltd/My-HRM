@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="container-fluid main-head bg-dark sticky-top">
+        <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-3 d-flex justify-content-center align-items-center">
+                <img src="./img/companylogo.png" height="70px" alt="logo">
+                <h1 class="text-light mx-2">Beangate</h1>
+            </div>
+            <div class="col-5 d-flex justify-content-around align-items-center ">
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                    <div class="input-group mb-3 d-flex justify-content-center align-items-center">
+                        <span class="input-group-text rounded-circle border-2 mx-2" style="background-color: #f06d03;"
+                            id="basic-addon1">
+                            <i class="bi bi-search text-light "></i></span>
+                        <input type="text" class="form-control rounded-pill " placeholder="Search....."
+                            aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="ml-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-bell-fill text-light" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                    </svg>
+
+                </div>
+
+                <div class="profile-pic">
+                    <img src="img/profile-pic.jpg" alt="pic" class="p-pic">
+                </div>
+                <div class="profile-name text-white  d-flex justify-content-center align-items-start flex-column">
+                    <span>Sachin Pawar</span>
+                    <span style="font-size:xx-small;" class="mt-0">UI/UX Designer</span>
+                </div>
+                <button type="button" class="btn btn-sm btn-dark dropdown-toggle-split" data-bs-toggle="dropdown"
+                    aria-expanded="true"><i class="bi bi-three-dots"></i>
+                </button>
+                <ul class="dropdown-menu p-2 mt-3" style="background-color: #f06d03">
+                    <li><a href="index.html" class="text-decoration-none text-light">Log Out</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-start ">
+            <div class="w-75">
+                <div class="messages p-3 bg-white my-4 rounded-4 ">
+                    <h5 class="info-heading">Messages</h5>
+                    <div class="mt-4 d-flex justify-content-between ">
+                        <div class="noti-from p-2 w-25 rounded-4 text-light d-flex flex-column justify-content-start align-items-center"
+                            style="background-color: #f06d03; width: 500px;">
+                            <div class="input-group input-group-sm flex-nowrap rounded-4 bg-light my-2">
+                                <input type="text" class="form-control border-0  rounded-start-3" placeholder="Find...."
+                                    aria-label="Username" aria-describedby="addon-wrapping">
+                                <span class="input-group-text border-0 rounded-end-3 bg-white" id="addon-wrapping"><i
+                                        class="fa fa-search text-dark bg-white"></i></span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center w-100 my-1 mx-0">
+                                <div class="">
+                                    <img src="./img/dp-pic.jpg" alt="dp" height="40px" class="rounded-circle">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between position-relative">
+                                    <div class="mx-2">
+                                        <h6>Raj Verma</h6>
+                                    </div>
+                                    <div style="font-size: x-small;">04:25</div>
+                                    <span
+                                        class="position-absolute top-50 mx-2 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                                        <span class="visually-hidden">New alerts</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <hr class="m-0 w-100 text-white opacity-25 ">
+                            <div class="d-flex justify-content-center align-items-center w-100 my-1">
+                                <div class="">
+                                    <img src="./img/dp-pic.jpg" alt="dp" height="40px" class="rounded-circle">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="mx-2">
+                                        <h6>Raj Verma</h6>
+                                    </div>
+                                    <div style="font-size: x-small;">04:25</div>
+                                </div>
+                            </div>
+                            <hr class="m-0 w-100 text-white opacity-25 ">
+                            <div class="d-flex justify-content-center align-items-center w-100 my-1">
+                                <div class="">
+                                    <img src="./img/dp-pic.jpg" alt="dp" height="40px" class="rounded-circle">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="mx-2">
+                                        <h6>Raj Verma</h6>
+                                    </div>
+                                    <div style="font-size: x-small;">04:25</div>
+                                </div>
+                            </div>
+                            <hr class="m-0 w-100 text-white opacity-25 ">
+                            <div class="d-flex justify-content-center align-items-center w-100 my-1">
+                                <div class="">
+                                    <img src="./img/dp-pic.jpg" alt="dp" height="40px" class="rounded-circle">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="mx-2">
+                                        <h6>Raj Verma</h6>
+                                    </div>
+                                    <div style="font-size: x-small;">04:25</div>
+                                </div>
+                            </div>
+                            <hr class="m-0 w-100 text-white opacity-25 ">
+                            <div class="d-flex justify-content-center align-items-center w-100 my-1">
+                                <div class="">
+                                    <img src="./img/dp-pic.jpg" alt="dp" height="40px" class="rounded-circle">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="mx-2">
+                                        <h6>Raj Verma</h6>
+                                    </div>
+                                    <div style="font-size: x-small;">04:25</div>
+                                </div>
+                            </div>
+                            <hr class="m-0 w-100 text-white opacity-25 ">
+                            <div class="d-flex justify-content-center align-items-center w-100 my-1">
+                                <div class="">
+                                    <img src="./img/dp-pic.jpg" alt="dp" height="40px" class="rounded-circle">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="mx-2">
+                                        <h6>Raj Verma</h6>
+                                    </div>
+                                    <div style="font-size: x-small;">04:25</div>
+                                </div>
+                            </div>
+                            <hr class="m-0 w-100 text-white opacity-25 ">
+                            <div class="d-flex justify-content-center align-items-center w-100 my-1">
+                                <div class="">
+                                    <img src="./img/dp-pic.jpg" alt="dp" height="40px" class="rounded-circle">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="mx-2">
+                                        <h6>Raj Verma</h6>
+                                    </div>
+                                    <div style="font-size: x-small;">04:25</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="read-messages mx-4 rounded-4 w-75"
+                            style="box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;">
+                            <div class=" rounded-top-4 " style="background-color: #f06d03;">
+                                <div class="col-3 p-2 d-flex justify-content-evenly">
+                                    <img src="./img/profile-pic.jpg" height="40" class="rounded-circle" alt="">
+                                    <div class="text-light p-0 m-0">
+                                        <h6 class="m-0">Sachin Pawar</h6>
+                                        <span class="m-0" style="font-size: x-small;">Active</span>
+                                    </div>
+                                </div>
+                                <div class="col-2 text-center ">
+                                </div>
+                            </div>
+                            <div class=" my-2 mx-1 overflow-y-scroll chatbox" style="height: 300px;">
+                                <div class=" w-75 float-start my-1 rounded-4 text-light p-2"
+                                    style="font-size: small; background-color: #f06d00;box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus excepturi qui,
+                                    tempore totam iste molestiae ut ea. Ea illo amet asperiores natus architecto. Ad
+                                    impedit
+                                    corporis illo distinctio vero eveniet!1
+                                </div>
+                                <div class=" w-75 rounded-4 my-1 p-2 float-end text-dark-emphasis bg-light"
+                                    style="font-size: small;box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus excepturi qui,
+                                    tempore totam iste molestiae ut ea. Ea illo amet asperiores natus architecto. Ad
+                                    impedit
+                                    corporis illo distinctio vero eveniet!2
+                                </div>
+                                <div class=" w-75 float-start my-1 rounded-4 text-light p-2"
+                                    style="font-size: small; background-color: #f06d03;box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus excepturi qui,
+                                    tempore totam iste molestiae ut ea. Ea illo amet asperiores natus architecto. Ad
+                                    impedit
+                                    corporis illo distinctio vero eveniet!3
+                                </div>
+                                <div class="w-75 rounded-4 my-1  p-2 float-end bg-light text-dark-emphasis"
+                                    style="font-size: small;box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus excepturi qui,
+                                    tempore totam iste molestiae ut ea. Ea illo amet asperiores natus architecto. Ad
+                                    impedit
+                                    corporis illo distinctio vero eveniet!4
+                                </div>
+
+
+                            </div>
+                            <div class="d-flex justify-content-around align-items-center">
+                                <div class="d-flex justify-content-center align-items-center ">
+                                    <span class="input-group-text border-0 rounded-end-4 bg-white"
+                                        id="addon-wrapping"><i class="fa fa-plus-circle text-dark bg-white"></i></span>
+                                </div>
+
+                                <div class="input-group rounded-4 float-end bg-light "
+                                    style="border: 1px solid #f06d03;">
+                                    <input type="text" class="form-control border-0  rounded-start-4"
+                                        placeholder="Message.." aria-label="Username" aria-describedby="addon-wrapping">
+                                    <span class="input-group-text border-0 rounded-end-4 bg-white"
+                                        id="addon-wrapping"><i class="fa fa-paper-plane text-dark bg-white"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ussage-details  p-3 bg-white my-4 rounded-4">
+                    <h5 class="info-heading">Ussage Details</h5>
+                    <hr>
+                    <p class="storage">Storage Used</p>
+                    <div class="progress">
+                        <div class="progress-bar " style="width:50%; background-color: #f06d03;"></div>
+                    </div>
+                    <p>5GB of 10GB used (50% of total storage used)</p>
+                    <hr>
+
+                    <p class="projects">Projects</p>
+                    <p class="project-lists">RS Online, Beangate Academy, Beangate.com</p>
+                    <hr>
+
+                    <div class="detailed-personal-info">
+                        <div class="row">
+                            <div class="col-6">
+                                <p><i class="fa-solid fa-building p-2"></i>Department</p>
+                                <p class="dep">Developer</p>
+                                <hr>
+
+                                <p><i class="fa-regular fa-star-half-stroke p-2"></i>Role</p>
+                                <p class="role">Frontent Devloper</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="team"><i class="fa-solid fa-people-group p-2"></i>Team</p>
+                                <p class="product-name">Sandeep, Sanjay,Nawaj</p>
+                                <hr>
+
+                                <p class="reg-Date"><i class="fa-regular fa-calendar-days p-2"></i>Reg Date</p>
+                                <p class="date">Aug 15, 2020</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="paraent-div d-flex justify-content-between align-items-center flex-column   ">
+
+                <div class="user-details d-flex flex-column justify-content-evenly align-items-center  my-4 rounded-4">
+                    <!-- profile card  -->
+                    <div class="d-flex flex-column justify-content-start align-items-center ">
+                        <div class="d-flex justify-content-around align-items-center px-2 rounded-4 text-light box- "
+                            style="background-color: #f06d03;">
+
+                            <div class="user-pic mx-0 my-3 mx-2  position-relative">
+                                <img src="img/profile-pic.jpg" class="rounded-4" alt="Profile picture" width="120px"
+                                    height="120px">
+
+                                <span
+                                    class="position-absolute top-0  my-2 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+                                    <span class="visually-hidden">New alerts</span>
+                                </span>
+                            </div>
+                            <div class="user-name p-0 mx-2 my-2 ">
+                                <h4 class="name ">Sachin Pawar</h4>
+                                <div class="my-3" style="font-size: x-small;">
+                                    <p class="emp-id"><i class="fa-regular fa-id-card"></i> Employee ID: #120</p>
+                                    <p class="designation"> <i class="fa-solid fa-suitcase"></i> Desination:<span> UI/UX
+                                            Designer</span></p>
+                                    <p class="login-time"><i class="fa-regular fa-clock"></i> Last Login:<span> 3Min,
+                                            ago</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user ">
+                            <ul class="wrapper ">
+                                <li class="icon linkdin p-3 border border-1 border-black ">
+                                    <span class="tooltip">Linkdin</span>
+                                    <span><i class="fab fa-linkedin-in"></i></span>
+                                </li>
+                                <li class="icon threads p-3 border border-1 border-black ">
+                                    <span class="tooltip">Threads</span>
+                                    <span><i class="fab fa-at"></i></span>
+                                </li>
+
+                                <li class="icon instagram p-3 border border-1 border-black">
+                                    <span class="tooltip">Instagram</span>
+                                    <span><i class="fab fa-instagram"></i></span>
+                                </li>
+                                <li class="icon github p-3  border border-1 border-black">
+                                    <span class="tooltip">github</span>
+                                    <span><i class="fab fa-github"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="personal-information p-3 bg-white rounded-4 ">
+                        <h5 class="info-heading">Personal Information</h5>
+                        <br>
+                        <p class="dob"><i class="fa-solid fa-cake-candles p-2"></i>Date-of-birth <span class="date">
+                                &nbsp; : &nbsp; June 5, 2001</span></p>
+
+                        <hr>
+                        <p class="gen"><i class="fa-solid fa-mars-and-venus p-2"></i>Gender <span class="m-f"> &nbsp; :
+                                &nbsp; Male</span></p>
+
+                        <hr>
+                        <p class="contact-number"><i class="fa-solid fa-phone p-2"></i>Contact Number<span
+                                class="number"> &nbsp; : &nbsp; 9516905325</span></p>
+
+                        <hr>
+                        <p class="email-add"><i class="fa-solid fa-envelope p-2"></i>Email Id<span class="id">&nbsp; :
+                                &nbsp; jr56@gmail.com</span></p>
+
+                        <hr>
+                        <p class="permanent-location"><i class="fa-solid fa-location-dot p-2"></i></i>Current
+                            Location<span class="location"> &nbsp; : &nbsp; Bhopal</span>
+                        </p>
+
+                        <hr>
+                        <p class="comm-loc"><i class="fa-solid fa-location-dot p-2"></i></i>Permanent Location<span
+                                class="loc"> &nbsp; : &nbsp; Agra</span></p>
+
+                        <h5 class="info-heading">Social Links</h5>
+                        <br>
+                        <div class="input-group input-group-sm rounded-4 float-end bg-light "
+                            style="border: 1px solid #f06d03;">
+                            <span class="input-group-text border-0 rounded-start-4 bg-white" id="addon-wrapping"><i
+                                    class="fab fa-instagram text-dark bg-white"></i></span>
+                            <input type="text" class="form-control border-0 " placeholder="Instagram"
+                                aria-label="Username" aria-describedby="addon-wrapping">
+                            <span class="input-group-text border-0 rounded-end-4 bg-danger-subtle "
+                                id="addon-wrapping">Add</span>
+                        </div>
+                        <hr class="w-100 text-light">
+                        <div class="input-group input-group-sm rounded-4 float-end bg-light "
+                            style="border: 1px solid #f06d03;">
+                            <span class="input-group-text border-0 rounded-start-4 bg-white" id="addon-wrapping"><i
+                                    class="fab fa-linkedin-in text-dark bg-white"></i></span>
+                            <input type="text" class="form-control border-0 " placeholder="Linkedin"
+                                aria-label="Username" aria-describedby="addon-wrapping">
+                            <span class="input-group-text border-0 rounded-end-4 bg-danger-subtle "
+                                id="addon-wrapping">Add</span>
+                        </div>
+                        <hr class="w-100 text-light">
+                        <div class="input-group input-group-sm rounded-4 float-end bg-light "
+                            style="border: 1px solid #f06d03;">
+                            <span class="input-group-text border-0 rounded-start-4 bg-white" id="addon-wrapping"><i
+                                    class="fab fa-facebook-f text-dark bg-white"></i></span>
+                            <input type="text" class="form-control border-0 " placeholder="Facebook"
+                                aria-label="Username" aria-describedby="addon-wrapping">
+                            <span class="input-group-text border-0 rounded-end-4 bg-danger-subtle "
+                                id="addon-wrapping">Add</span>
+                        </div>
+                        <hr class="w-100 text-light">
+                        <div class="input-group input-group-sm rounded-4 float-end bg-light "
+                            style="border: 1px solid #f06d03;">
+                            <span class="input-group-text border-0 rounded-start-4 bg-white" id="addon-wrapping"><i
+                                    class="fab fa-twitter text-dark bg-white"></i></span>
+                            <input type="text" class="form-control border-0 " placeholder="Twitter"
+                                aria-label="Username" aria-describedby="addon-wrapping">
+                            <span class="input-group-text border-0 rounded-end-4 bg-danger-subtle "
+                                id="addon-wrapping">Add</span>
+                        </div>
+                        <hr class="w-100 text-light">
+                        <div class="input-group input-group-sm rounded-4 float-end bg-light "
+                            style="border: 1px solid #f06d03;">
+                            <span class="input-group-text border-0 rounded-start-4 bg-white" id="addon-wrapping"><i
+                                    class="fab fa-github text-dark bg-white"></i></span>
+                            <input type="text" class="form-control border-0 " placeholder="GitHub"
+                                aria-label="Username" aria-describedby="addon-wrapping">
+                            <span class="input-group-text border-0 rounded-end-4 bg-danger-subtle "
+                                id="addon-wrapping">Add</span>
+                        </div>
+                        <hr class="w-100 text-light">
+                        <div class="input-group input-group-sm rounded-4 float-end bg-light "
+                            style="border: 1px solid #f06d03;">
+                            <span class="input-group-text border-0 rounded-start-4 bg-white" id="addon-wrapping">
+                                <i class="fa fa-at"></i>
+                            </span>
+                            <input type="text" class="form-control border-0 " placeholder="Threads"
+                                aria-label="Username" aria-describedby="addon-wrapping">
+                            <span class="input-group-text border-0 rounded-end-4 bg-danger-subtle "
+                                id="addon-wrapping">Add</span>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mid-profile d-flex justify-content-between align-items-start">
+
+
+
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
