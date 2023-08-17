@@ -1,6 +1,4 @@
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
+
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 * {
@@ -30,6 +28,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 input:focus {
@@ -334,7 +333,11 @@ nav.main-menu li.active>a {
 .box-main{
   /* margin-right: -2px; */
   margin-left: 40px;
+  height: 70vh;
 
+}
+.box-main::-webkit-scrollbar{
+  display: none;
 }
 
 
@@ -364,8 +367,7 @@ nav.main-menu li.active>a {
   
   }  
 
-=======
->>>>>>> Stashed changes
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 body{
@@ -496,7 +498,4 @@ h3{
 	color: #fff;
 	height: 90%;
 }
-<<<<<<< Updated upstream
-=======
->>>>>>> 10f4acf61a9bba43b7a0a1733c3860b24fb0a3c4
->>>>>>> Stashed changes
+
