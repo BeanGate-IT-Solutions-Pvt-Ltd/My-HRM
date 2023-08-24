@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/payslip.css">
+
     <title>Pay SLip</title>
 </head>
 <body>
@@ -52,5 +58,221 @@
 
     </div>
     <!-- header end -->
+
+    <div class=" container-fluid hero position-relative">
+
+
+        <div class="side-menu-bar top-0 ">
+
+            <nav class="main-menu ">
+
+                <div class="scrollbar" id="style-1">
+
+                    <ul>
+
+                        <li class="active">
+                            <a href="dashboard.html">
+                                <i class="bi bi-columns-gap mx-2" style="font-size: 2rem;"></i>
+                                <span class="nav-text">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-person-fill mx-2" style="font-size: 2rem;"></i>
+                                <span class="nav-text">Management</span>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">
+
+                                <i class="bi bi-person-circle mx-2" style="font-size: 2rem;"></i>
+                                <span class="nav-text">Clients</span>
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+
+                            <a href="" class="dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-people-fill mx-2" style="font-size: 2rem;"></i>
+                                <span class="nav-text">Employee</span>
+                            </a>
+                               
+                                <ul class="dropdown-menu ">
+                                    <li><button class="dropdown-item" type="button"><a href="employees.html" class="text-decoration-none text-dark">Details</a></button></li>                                    
+                                    <li><button class="dropdown-item" type="button"><a href="attendance.html" class="text-decoration-none text-dark">Attendance</a></button></li>
+                                    <li><button class="dropdown-item" type="button"> <a href="payslip.html" class="text-decoration-none text-dark">Pay Slip</a> </button></li>
+                                    <li><button class="dropdown-item" type="button">Add Employee</button></li>
+                                </ul>
+                        </li>
+                        <li>
+
+                            <a href="#">
+                                <i class="fa fa-graduation-cap mx-2" style="font-size: 2rem;"></i>
+                                <span class="nav-text">Students</span>
+                            </a>
+                        </li>
+
+                        <li>
+
+                            <a href="#">
+                                <i class="bi bi-currency-rupee mx-2" style="font-size: 2rem;"></i>
+                                <span class="nav-text">Revenue</span>
+                            </a>
+                        </li>
+
+                        <li>
+
+                            <a href="#">
+                                <i class="bi bi-calendar2-date-fill mx-2" style="font-size: 2rem;"></i>
+                                <span class="nav-text">Calender</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+        <div class="dashboard-main-box mx-5 d-flex justify-content-start flex-column">
+            <div class="container-fluid my-4 card">
+                <div class="col-sm-12 py-3 d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="text-dark card-title fs-2">Pay Slip</h5>
+                    </div>
+
+                    <div>
+                        <i class="fab -solid fa-google-pay mx-2" style="font-size: 1.7rem; color: #f06d03"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div> -->
+                <table class="bg-white table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <th colspan="4">BeanGate IT Solutions Pvt. Ltd.</th>
+                        </tr>
+                        <tr>
+                            <th colspan="4">MIG-50, B- Sector Sonagiri Piplani BHEL Bhopal(M.P.)-462022
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Pay Slip</th>
+                            <th colspan="2">June</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>Employee Name</th>
+                            <td> Sachin Pawar</td>
+                            <th>Total Working Days </th>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <th>Employee ID</th>
+                            <td>101</td>
+                            <th>LOP Days</th>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th>Designation</th>
+                            <td>Front-End Developer</td>
+                            <th>Paid Days</th>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <th>Department</th>
+                            <td>Development</td>
+                            <th>Bank Name</th>
+                            <td>HDFC</td>
+                        </tr>
+                        <tr>
+                            <th>Date of Joining </th>
+                            <td>16/09/2022</td>
+                            <th>Bank A/c No </th>
+                            <td>50100594825462</td>
+                        </tr>
+                        <tr>
+                            <th>Gross Salary </th>
+                            <td>8000</td>
+                            <th></th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>UAN</th>
+                            <td></td>
+                            <th></th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Earnings</th>
+                            <th colspan="2">Deductions</th>
+                        </tr>
+
+                        <tr>
+                            <th>Basic Salary </th>
+                            <td>&#8377 3,600</td>
+                            <th>EPF</th>
+                            <td>&#8377 0</td>
+                        </tr>
+                        <tr>
+                            <th>House Rent Allowances</th>
+                            <td>&#8377 1,400</td>
+                            <th>Health Insurance/ESI</th>
+                            <td>&#8377 0</td>
+                        </tr>
+                        <tr>
+                            <th>Conveyance Allowances</th>
+                            <td>&#8377 1,600</td>
+                            <th>Professional Tax </th>
+                            <td>&#8377 0</td>
+                        </tr>
+                        <tr>
+                            <th>Medical Allowances </th>
+                            <td>&#8377 1,250</td>
+                            <th></th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Special Allowances</th>
+                            <td>&#8377 110</td>
+                            <th></th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Over Time</th>
+                            <td>&#8377 0</td>
+                            <th></th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Gross Salary </th>
+                            <td>&#8377 8,000</td>
+                            <th>Total Deductions</th>
+                            <td>&#8377 0</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Net Pay</th>
+                            <td>&#8377 8,000</td>
+                            
+                        </tr>
+                        <tr>
+                            <th colspan="2">Amount in Words</th>
+                            <td colspan="2"> Rupees Eight Thousand Only
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            <!-- </div> -->
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
